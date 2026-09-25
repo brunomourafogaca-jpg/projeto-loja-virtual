@@ -7,14 +7,14 @@
 		inteiro opcao_menu_principal = -1
 		inteiro opcao_crud = -1
 		inteiro opcao_pagamento = 0
-		
+
 		// Variável auxiliar para pausar a tela
 		cadeia tecla_pausa = ""
-		
+
 		// Preços e Estoques fixos dos Produtos
 		real preco_prod1 = 150.0, preco_prod2 = 60.0, preco_prod3 = 250.0
 		inteiro estoque_prod1 = 10, estoque_prod2 = 15, estoque_prod3 = 8
-		
+
 		// Variáveis do CARRINHO DE COMPRAS (Qtds dos Itens)
 		inteiro qtd_carrinho_prod1 = 0
 		inteiro qtd_carrinho_prod2 = 0
@@ -36,7 +36,7 @@
 
       escreva("------------------------------------------")
       escreva("MENU PRINCIPAL")
-   
+
 
      escreva("1. Ver Produtos e Adicionar ao Carrinho (CREATE)")
 
@@ -66,10 +66,15 @@ escolha(opcao_menu_principal)
 
 
 }
+
+    
+    
    
        
   }
 }
+
+
 caso 1:
 limpa()
 escreva("--- CATÁLOGO DE PRODUTOS
@@ -88,15 +93,26 @@ se (opcao_crud = 1)
 {
 se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1) {
 
+ }senao{
 
 
+  escreva("Quantidade inválida ou estoque insuficiente!")
 
 
+           }
+       }
+       senao se (opcao_crud == 3)
+       {
+          se ( quantidade_temp > 0 e quantidade_temp <== estoque_prod3){
+          qtd_carrinho_prod3 = qtd_carrinho_prod3 + quantidade_temp
+          estoque_prod3 = estoque prod3 quantidade temp
 
 
+  escreva("Item adicionado ao carrinho com sucesso!")
 
 
+          } senao {
+              escreva("Quantidada inválida ou estoque insuficiente!")
 
-    
-  }
-}
+              colar parte 6 aq
+
