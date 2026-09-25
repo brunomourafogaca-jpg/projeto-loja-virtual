@@ -131,6 +131,22 @@ se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1) {
                         } senao{
                           estoque_prod3 = estoque_prod3 - qtd_carrinho_prod3
                           escreva("
+
+
+                        
+                         Quantidade inválida ou acima do estoque disponível!")
+                         }
+                    }
+                    senao {
+                       escreva(" Opção inválida!")
+                    }
+                    escreva("Pressione ENTER para voltar ao menu...")
+                    leia(tecla_pausa)
+                    pare 
+                // ======================================================
+                // D - DELETE (Remover Item do Carrinho)
+                // ======================================================
+                caso 4:
                         
                       }
 
