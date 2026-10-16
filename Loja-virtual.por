@@ -1,5 +1,4 @@
-
-        programa
+       programa
 {
 	funcao inicio()
 	{
@@ -67,10 +66,10 @@ escolha(opcao_menu_principal)
 
 }
 
-    
-    
-   
-       
+
+
+
+
   }
 }
 
@@ -119,7 +118,7 @@ se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1) {
                            }
                       }
                       senao se (opcao_crud == 3){
-                        
+
                         estoque_prod3 = estoque_prod3 + qtd_carrinho_prod3
                         escreva("Digite a NOVA quantidade total para este item: ")
                         leia(quantidade_temp)
@@ -147,7 +146,7 @@ se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1) {
                 // D - DELETE (Remover Item do Carrinho)
                 // ======================================================
                 caso 4:
-                        
+
 
 
 
@@ -227,7 +226,25 @@ Pressione ENTER para continuar...")
               escreva("
   2. Cartão de Crédito (Valor normal)")
 
+
+
+  escreva("
+Escolha a forma de pagamento: ")
+leia (opcao_pagamento)
+escolha (opcao_pagamento)
+{
+caso 1:
+valor_desconto valor_total_bruto * 0.10
+valor_final = valor_total_bruto valor_desconto
+pare
+caso 2:
+valor_desconto = 0.0
+valor_final = valor_total_bruto
+pare
+caso contrario:
+escreva("
+Opção inválida! Processando valor normal.
+
       }
 }
                       }
-
